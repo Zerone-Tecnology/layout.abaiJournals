@@ -50,7 +50,9 @@ body textarea:required:valid
 ul
 	li
 		list-style-type: none
-
+.img
+	img
+		width: 100%
 // BUTTONS
 .btn
 	border-radius: 15rem
@@ -63,20 +65,32 @@ ul
 		background-color: $yellow
 		color: #fff
 		text-transform: uppercase
+		&:hover
+			text-decoration: none
+	&-blue
+		background-color: $accent
+		color: #fff
+		padding: 5px
+		font-family: 'Montserrat', sans-serif
+		font-size: 18px
 
-header
+.header
 	.title
 		font-family: DINCondensed, sans-serif
 		text-transform: uppercase
 		margin: 0
 		color: $accent
+		font-size: 28px
 	.top
 		&.right
 			display: flex
 			a
 				display: inline-block
-	.logo img
-		padding: 10px 5px
+	.logo
+		vertical-align: bottom
+		padding: 10px
+		img
+			width: 80%
 	ul
 		margin: 0
 		li
@@ -95,16 +109,22 @@ header
 	.top-line
 		background-color: $accent
 		font-family: 'Montserrat', sans-serif
+		.block
+			display: inline-block
+			&.logo
+				width: 15%
+			&.menu
+				width: 60%
+			&.btn-wrap
+				width: 20%
 		ul
 			display: flex
 			padding: 0
 			margin: 0
 			li
-				padding: 15px
 				font-size: 18px
 				position: relative
-				display: block
-				background: $yellow
+				display: inline-block
 				&:hover 
 					background-color: #425BA8
 					ul
@@ -113,19 +133,24 @@ header
 					color: #fff
 					font-weight: bold
 					text-transform: uppercase
+					display: block
+					padding: 15px 0
 					&:hover
 						color: #fff
 						text-decoration: none
-				&.sub::after
-					content: '⯆'
-					position: absolute
-					color: #fff
-					top: 50%
-					margin-top: -15px
-					padding-left: 5px
-					width: 15px
-					height: 20px
-					vertical-align: top
+				&.sub
+					padding-right: 20px
+					display: block
+					&::after
+						content: '⯆'
+						position: absolute
+						color: #fff
+						right: 0
+						top: 50%
+						margin-top: -15px
+						width: 15px
+						height: 20px
+						vertical-align: top
 				ul
 					position: absolute
 					left: 0
@@ -133,7 +158,22 @@ header
 					width: 320px
 					background: $accent
 					display: none
+					z-index: 9
 					li
 						display: block
 						a
 							font-weight: 300
+							padding: 5px
+.main
+	margin-top: 55px
+	.center-wrap
+		.site-title
+			font-size: 54px
+			font-family: DINCondensed, sans-serif
+			line-height: 1em
+			text-transform: uppercase
+			margin-top: 0
+		.btn-wrap
+			.btn
+				display: inline-block
+				width: 45%
