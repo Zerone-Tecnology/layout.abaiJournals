@@ -82,6 +82,25 @@ ul li {
   font-size: 18px;
 }
 
+.submenu ul li {
+  background-color: #FF8A00;
+  text-transform: uppercase;
+}
+.submenu ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  text-align: right;
+  display: block;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.quote {
+  background-color: #F1F1F1;
+  border-radius: 15px;
+  padding: 15px;
+}
+
 .header .title {
   font-family: DINCondensed, sans-serif;
   text-transform: uppercase;
@@ -138,6 +157,11 @@ ul li {
 }
 .header .top-line .block.btn-wrap {
   width: 20%;
+  float: right;
+}
+.header .top-line .block.btn-wrap .btn {
+  padding: 7px;
+  margin-top: 10px;
 }
 .header .top-line ul {
   display: flex;
