@@ -50,6 +50,25 @@ body textarea:required:valid {
   display: none;
 }
 
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+ul {
+  margin: 0;
+}
 ul li {
   list-style-type: none;
 }
@@ -66,13 +85,15 @@ ul li {
   font-size: 22px;
   text-align: center;
 }
+.btn:hover {
+  text-decoration: none;
+  background-color: #192e6f;
+  color: #fff;
+}
 .btn-yellow {
   background-color: #FF8A00;
   color: #fff;
   text-transform: uppercase;
-}
-.btn-yellow:hover {
-  text-decoration: none;
 }
 .btn-blue {
   background-color: #223F99;
@@ -81,10 +102,35 @@ ul li {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
+.btn-icon {
+  background-repeat: no-repeat;
+  background-size: 1.7em;
+  background-position: 15px 8px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn-pdf {
+  background-image: url("../img/icon-pdf.png");
+}
+.btn-read {
+  background-image: url("../img/icon-book.png");
+}
 
+.submenu {
+  width: 100%;
+}
+.submenu ul {
+  padding: 0;
+}
 .submenu ul li {
   background-color: #FF8A00;
   text-transform: uppercase;
+}
+.submenu ul li:hover {
+  background-color: #cc6e00;
+}
+.submenu ul li:hover a {
+  text-decoration: none;
 }
 .submenu ul li a {
   color: #fff;
@@ -93,6 +139,7 @@ ul li {
   display: block;
   font-weight: 800;
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 .quote {
@@ -101,9 +148,16 @@ ul li {
   padding: 15px;
 }
 
+h4.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 .header .title {
   font-family: DINCondensed, sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   margin: 0;
   color: #223F99;
   font-size: 28px;
@@ -228,6 +282,7 @@ ul li {
 .main .center-wrap .site-title {
   font-size: 54px;
   font-family: DINCondensed, sans-serif;
+  font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
   margin-top: 0;
@@ -235,4 +290,78 @@ ul li {
 .main .center-wrap .btn-wrap .btn {
   display: inline-block;
   width: 45%;
+}
+
+.block-list .block {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4784313725);
+  padding: 15px;
+  margin: 35px 0;
+  position: relative;
+}
+.block-list .block-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: DINCondensed, sans-serif;
+  line-height: 1.2;
+}
+.block-list .block .btn.btn-icon {
+  width: auto;
+  padding: 10px 10px 10px 55px;
+}
+.block-list .block .authors a {
+  color: #000;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  padding: 0 10px;
+}
+.block-list .block .authors a:last-child {
+  border: none;
+}
+.block-list .block .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 25px 0;
+}
+.block-list .block .pages {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.block-article .suumary {
+  background-color: #f1f1ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.block-article .suumary .title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: DINCondensed, sans-serif;
+}
+
+footer {
+  background-color: #223F99;
+  padding: 15px;
+  color: #fff;
+  margin-top: 55px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+footer .left {
+  text-align: left;
+}
+footer .right {
+  text-align: right;
+}
+footer .mt {
+  margin-top: 55px;
+}
+footer .zerone img {
+  margin-right: 15px;
 }/*# sourceMappingURL=main.css.map */

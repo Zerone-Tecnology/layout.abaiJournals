@@ -44,4 +44,8 @@ $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
+	$('.block-sliders').owlCarousel({
+		items: 4
+	});
+
 });
