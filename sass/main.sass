@@ -58,6 +58,21 @@ ul
 	margin: 0
 	li
 		list-style-type: none
+a
+	&.color
+		background-color: $accent
+		border-radius: 15em
+		padding: 5px 10px
+		color: #fff
+		display: inline-block
+	&.more-citation
+		border: 1px solid #000
+		border-radius: 5px
+		padding: 10px 15px
+		display: block
+		margin: 15px 0
+		color: #000
+		text-align: center
 .img
 	img
 		width: 100%
@@ -89,6 +104,9 @@ ul
 		background-position: 15px 8px
 		text-transform: uppercase
 		border-radius: 5px
+		width: auto
+		padding: 10px 10px 10px 55px
+		display: inline-block
 	&-pdf
 		background-image: url('../img/icon-pdf.png')
 	&-read
@@ -245,9 +263,6 @@ h4.title
 				text-transform: uppercase
 				font-family: DINCondensed, sans-serif
 				line-height: 1.2
-			.btn.btn-icon
-				width: auto
-				padding: 10px 10px 10px 55px
 			.authors
 				a
 					color: #000
@@ -266,6 +281,15 @@ h4.title
 				top: 15px
 				right: 15px
 	&-article
+		.info
+			text-transform: uppercase
+			font-size: 18px
+		.block-title
+			margin: 10px 0
+			line-height: 1.2
+			font-size: 34px
+		.authors
+			padding: 15px 0
 		.suumary
 			background-color: #f1f1ff
 			padding: 15px
@@ -274,6 +298,15 @@ h4.title
 				text-transform: uppercase
 				font-size: 24px
 				font-family: DINCondensed, sans-serif
+		&-right
+			.info
+				margin-top: 15px
+				.title
+					font-size: 18px
+				&.keywords
+					a
+						margin: 4px 0
+
 
 footer
 	background-color: $accent

@@ -73,6 +73,23 @@ ul li {
   list-style-type: none;
 }
 
+a.color {
+  background-color: #223F99;
+  border-radius: 15em;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+}
+a.more-citation {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: block;
+  margin: 15px 0;
+  color: #000;
+  text-align: center;
+}
+
 .img img {
   width: 100%;
 }
@@ -108,6 +125,9 @@ ul li {
   background-position: 15px 8px;
   text-transform: uppercase;
   border-radius: 5px;
+  width: auto;
+  padding: 10px 10px 10px 55px;
+  display: inline-block;
 }
 .btn-pdf {
   background-image: url("../img/icon-pdf.png");
@@ -304,10 +324,6 @@ h4.title {
   font-family: DINCondensed, sans-serif;
   line-height: 1.2;
 }
-.block-list .block .btn.btn-icon {
-  width: auto;
-  padding: 10px 10px 10px 55px;
-}
 .block-list .block .authors a {
   color: #000;
   text-transform: uppercase;
@@ -328,6 +344,18 @@ h4.title {
   top: 15px;
   right: 15px;
 }
+.block-article .info {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.block-article .block-title {
+  margin: 10px 0;
+  line-height: 1.2;
+  font-size: 34px;
+}
+.block-article .authors {
+  padding: 15px 0;
+}
 .block-article .suumary {
   background-color: #f1f1ff;
   padding: 15px;
@@ -337,6 +365,15 @@ h4.title {
   text-transform: uppercase;
   font-size: 24px;
   font-family: DINCondensed, sans-serif;
+}
+.block-article-right .info {
+  margin-top: 15px;
+}
+.block-article-right .info .title {
+  font-size: 18px;
+}
+.block-article-right .info.keywords a {
+  margin: 4px 0;
 }
 
 footer {
