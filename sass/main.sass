@@ -250,6 +250,12 @@ h4.title
 				display: inline-block
 				width: 45%
 .block
+	&-title
+		margin: 10px 0
+		line-height: 1.2
+		font-size: 34px
+		text-transform: uppercase
+		font-family: DINCondensed, sans-serif
 	&-sliders
 		.slider
 	&-list
@@ -280,14 +286,12 @@ h4.title
 				position: absolute
 				top: 15px
 				right: 15px
+			.btn-wrap .btn
+				width: auto
 	&-article
 		.info
 			text-transform: uppercase
 			font-size: 18px
-		.block-title
-			margin: 10px 0
-			line-height: 1.2
-			font-size: 34px
 		.authors
 			padding: 15px 0
 		.suumary
@@ -306,6 +310,23 @@ h4.title
 				&.keywords
 					a
 						margin: 4px 0
+	&-content
+		ul
+			li
+				list-style-type: disc
+	&-archive
+		.year
+			text-transform: uppercase
+			font-size: 28px
+			font-family: DINCondensed, sans-serif
+			font-weight: 700
+		.issues
+			display: flex
+			flex: 0 0 4
+			.issue
+				padding: 15px
+				img
+					width: 100%
 
 
 footer
