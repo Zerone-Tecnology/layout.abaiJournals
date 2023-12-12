@@ -140,6 +140,12 @@ h4.title
 	text-transform: uppercase
 	font-weight: 600	
 
+.icon
+	background-image: url('../img/sets.png')
+	&-auth
+		background-position: 0 5px
+		background-size: 25%
+		background-repeat: no-repeat
 .header
 	.title
 		font-family: DINCondensed, sans-serif
@@ -164,15 +170,54 @@ h4.title
 			padding: 5px 15px
 			a
 				color: #000
+	.lang-wrap
+		position: relative
+		width: 65px
+		&::after
+			content: ''
+			height: 20px
+			width: 1px
+			background: #000
+			right: 0
+			top: 5px
+			position: absolute
+
 	ul.lang
+		position: absolute
+		background-color: #fff
+		border-radius: 5px
+		z-index: 9
+		padding: 0
 		li
 			display: none
+			a
+				text-decoration: none
 			&.active
 				display: block
+				font-weight: 800
+				&::before
+					content: "⯆"
+					position: absolute
+					right: 0
+					top: 4px
+					color: #000
+			&:hover
+				a
+					color: $accent
 		&:hover li
 			display: block
-	ul.link li
-		display: inline-block
+	ul.link 
+		padding-left: 10px
+		li
+			display: inline-block
+			&.login
+				padding-left: 40px
+	.search
+		input[type="text"]
+			border-radius: 15px
+			border: 1px solid #000
+			margin: 5px 0
+			padding: 0 15px
 	.top-line
 		background-color: $accent
 		font-family: 'Montserrat', sans-serif
@@ -186,8 +231,9 @@ h4.title
 				width: 20%
 				float: right
 				.btn
-					padding: 7px
+					padding: 2px
 					margin-top: 10px
+					font-size: 30px
 		ul
 			display: flex
 			padding: 0
@@ -249,6 +295,7 @@ h4.title
 			.btn
 				display: inline-block
 				width: 45%
+
 .block
 	&-title
 		margin: 10px 0
@@ -327,7 +374,6 @@ h4.title
 				padding: 15px
 				img
 					width: 100%
-
 
 footer
 	background-color: $accent
