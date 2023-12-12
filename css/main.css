@@ -135,6 +135,12 @@ a.more-citation {
 .btn-read {
   background-image: url("../img/icon-book.png");
 }
+.btn-primary {
+  font-family: DINCondensed, sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  padding: 5px 35px;
+}
 
 .submenu {
   width: 100%;
@@ -397,7 +403,7 @@ h4.title {
   border: none;
 }
 .block-list .block .title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   margin: 25px 0;
