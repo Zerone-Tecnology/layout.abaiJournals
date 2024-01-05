@@ -1,0 +1,136 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.btn-blue
+		font-size: 16px
+	.header 
+		.top-line 
+			ul li
+				font-size: 16px
+			.block.btn-wrap .btn
+				font-size: 24px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header
+		background-color: $accent
+		color: #fff
+		.top-line
+			display: none
+		.left
+			text-align: center
+		.right
+			padding: 15px 0 0
+			.auth-wrap
+				width: 10%
+				.icon
+					filter: invert(100%)
+				.link
+					.icon-auth
+						position: relative
+						height: 30px
+						width: 30px
+						background-size: 40%
+						a
+							display: block
+							position: absolute
+							top: 0
+							left: 0
+							width: 30px
+							height: 100%
+							overflow: hidden
+							padding-left: 30px
+					.registration
+						display: none
+			.mobile-logo
+				display: block
+				width: 60%
+				text-align: center
+				img
+					width: 100px
+			.search-wrap
+				display: none
+			.lang-wrap
+				width: 20%
+				&::after
+					content: none					
+				.lang
+					background-color: transparent
+					position: relative
+					float: left
+					li
+						display: inline-block
+						padding: 5px
+						&.active::before
+							content: none
+				a
+					color: #fff
+			.mobile-menu-wrap
+				display: block
+				width: 10%
+		.title
+			color: #fff
+			line-height: 1em
+			padding: 10px 0
+	
+	.main
+		.left-wrap
+			display: none
+		.center-wrap
+			.mobile-cover
+				float: left
+				width: 250px
+				display: inline-block
+				img
+					display: block
+					width: 100%
+					padding: 0 15px 5px 0
+			.site-title
+				font-size: 44px
+			.btn-wrap .btn-blue
+				font-size: 14px
+				margin: 5px 0 0
+		.right-wrap
+			display: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -36,6 +36,8 @@ body
 	line-height: 1.6
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
+	padding: 0
+	margin: 0
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -59,6 +61,7 @@ ul
 	li
 		list-style-type: none
 a
+	text-decoration: none
 	&.color
 		background-color: $accent
 		border-radius: 15em
@@ -137,17 +140,78 @@ a
 				font-weight: 800
 				margin-bottom: 5px
 				font-weight: 600
+// MOBILE MENU
+.mmenu 
+	position: relative 
+	display: inline-block 
+	width: 30px 
+	height: 30px 
+	margin: 5px 
+	span 
+		margin: 0 auto 
+		position: relative 
+		top: 10px 
+		&:before 
+			margin-top: -10px 
+		&:after 
+			margin-top: 10px 
+	span:before, span:after 
+		position: absolute 
+		content: '' 
+	span, span:before, span:after 
+		width: 30px 
+		height: 3px 
+		background-color: #fff 
+		display: block 
+	span 
+		-webkit-transition-duration: 0s 
+		transition-duration: 0s 
+		-webkit-transition-delay: 0.2s 
+		transition-delay: 0.2s 
+		&:before 
+			-webkit-transition-property: margin, -webkit-transform 
+			transition-property: margin, transform 
+			-webkit-transition-duration: 0.2s 
+			transition-duration: 0.2s 
+			-webkit-transition-delay: 0.2s, 0s 
+			transition-delay: 0.2s, 0s 
+		&:after 
+			-webkit-transition-property: margin, -webkit-transform 
+			transition-property: margin, transform 
+			-webkit-transition-duration: 0.2s 
+			transition-duration: 0.2s 
+			-webkit-transition-delay: 0.2s, 0s 
+			transition-delay: 0.2s, 0s 
+	&:hover 
+		span 
+			background-color: rgba(0,0,0,0.0) 
+			-webkit-transition-delay: 0.2s 
+			transition-delay: 0.2s 
+			&:before 
+				margin-top: 0 
+				-webkit-transform: rotate(45deg) 
+				transform: rotate(45deg) 
+				-webkit-transition-delay: 0s, 0.2s 
+				transition-delay: 0s, 0.2s 
+			&:after 
+				margin-top: 0 
+				-webkit-transform: rotate(-45deg) 
+				transform: rotate(-45deg) 
+				-webkit-transition-delay: 0s, 0.2s 
+				transition-delay: 0s, 0.2s 
+
 .quote
 	background-color: #F1F1F1
 	border-radius: 15px
 	padding: 15px
 h4.title
 	font-size: 50px
+	font-family: DINCondensed, sans-serif
 	text-transform: uppercase
 	font-weight: 600	
 
 .icon
-	background-image: url('../img/sets.png')
+	background-image: url('../img/sets.png')	
 	&-auth
 		background-position: 0 5px
 		background-size: 25%
@@ -160,16 +224,19 @@ h4.title
 		margin: 0
 		color: $accent
 		font-size: 28px
+		line-height: 1em
 	.top
+		padding: 15px 0
 		&.right
 			display: flex
+			align-items: center
 			a
 				display: inline-block
 	.logo
 		vertical-align: bottom
 		padding: 10px
 		img
-			width: 80%
+			width: 72%
 	ul
 		margin: 0
 		li
@@ -179,6 +246,7 @@ h4.title
 	.lang-wrap
 		position: relative
 		width: 65px
+		height: 30px
 		&::after
 			content: ''
 			height: 20px
@@ -187,6 +255,8 @@ h4.title
 			right: 0
 			top: 5px
 			position: absolute
+	.mobile-logo, .mobile-menu-wrap
+		display: none
 
 	ul.lang
 		position: absolute
@@ -218,12 +288,13 @@ h4.title
 			display: inline-block
 			&.login
 				padding-left: 40px
-	.search
+	.search-wrap
 		input[type="text"]
+			width: 100%
 			border-radius: 15px
 			border: 1px solid #000
 			margin: 5px 0
-			padding: 0 15px
+			padding: 5px 15px
 	.top-line
 		background-color: $accent
 		font-family: 'Montserrat', sans-serif
@@ -262,7 +333,7 @@ h4.title
 						color: #fff
 						text-decoration: none
 				&.sub
-					padding-right: 20px
+					padding-right: 30px
 					display: block
 					&::after
 						content: '⯆'
@@ -274,6 +345,7 @@ h4.title
 						width: 15px
 						height: 20px
 						vertical-align: top
+						right: 10px
 				ul
 					position: absolute
 					left: 0
@@ -290,6 +362,8 @@ h4.title
 .main
 	margin-top: 55px
 	.center-wrap
+		.mobile-cover
+			display: none
 		.site-title
 			font-size: 54px
 			font-family: DINCondensed, sans-serif
@@ -378,11 +452,22 @@ h4.title
 			flex: 0 0 4
 			.issue
 				padding: 15px
+				position: relative
 				img
 					width: 100%
+				.title-wrap
+					position: absolute
+					top: 0
+					left: 0
+					padding: 15px
+					width: 100%
+					height: 100%
+					background-color: $accent
+					color: #fff
+					text-align: center
 
 footer
-	background-color: $accent
+	background-color: #022967
 	padding: 15px
 	color: #fff
 	margin-top: 55px
@@ -401,3 +486,5 @@ footer
 	.zerone
 		img
 			margin-right: 15px
+
+@import "media"
